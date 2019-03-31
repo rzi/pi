@@ -1,8 +1,12 @@
-﻿<html>
+﻿<!doctype html>
+<html lang="pl-PL">
+
 <head>
 <title>Pomiar temperatury Raspberry PI</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<!-- <meta http-equiv="content-type" content="text/html; charset=iso-8859-2"> -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/style.css" type="text/css" />
+
 </head>
 <body>
 

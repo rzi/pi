@@ -1,11 +1,14 @@
 ﻿<!doctype html>
-<html lang="pl">
+<html lang="pl-PL">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
- <title>Odczyt czujników</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<title>Odczyt czujników</title>
 </head>
 <body>
-<?php include_once("analyticstracking.php") ?>
+
 <a href="index.php"><<< Powrót</a>
  </br>
 <a href="http://localhost/new_zmiana.php"> Edycja >>></a>
