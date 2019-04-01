@@ -8,11 +8,16 @@
 <title>Odczyt czujników</title>
 </head>
 <body>
-
-<a href="index.php"><<< Powrót</a>
- </br>
-<a href="http://localhost/new_zmiana.php"> Edycja >>></a>
+<div>
+   <a href="index.php"><<< Powrót</a>
+<!-- </br> -->
+</div>
+<div>
+  <a href="http://localhost/new_zmiana.php"> Edycja >>></a>
 <!-- <br> -->
+
+</div>
+
 <?php
 
 
