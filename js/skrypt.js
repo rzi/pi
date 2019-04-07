@@ -1,7 +1,9 @@
 /*Ustawienie wykonania działań wówczas, gdy strona jest całkowicie wczytana */
 $(document).ready(function () {
   var obiekt;
-  obiekt = document.getElementById('objektPomiarowy');
+
+  var sel = document.getElementById('objektPomiarowy');
+  obiekt=sel.value
 
   var teraz = new Date;
 
@@ -29,7 +31,7 @@ $(document).ready(function () {
   dateControl.value = dzien;
 
   $("#przycisk1").click(function () {
-    alert("przycisk1");
+    //alert("przycisk1");
     $.ajax({
       async: true,   // this will solve the problem
       type: "GET",
@@ -44,6 +46,7 @@ $(document).ready(function () {
       },
       done: function () {
         /*Zdefiniowanie tzw. alertu (prostej informacji) w sytacji sukcesu wysyłania. */
+        alert("wysłany ajax");
       },
       fail: function (blad) {
         alert("Wystąpił błąd");
