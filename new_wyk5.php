@@ -1,17 +1,14 @@
 ﻿<?php
 require_once('kalendarz/calendar/classes/tc_calendar.php');
-
-header ( "Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0");
-header ("Pragma: no-cache");
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!doctype html>
+<html lang="pl-PL">
 <head>
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>Formularz dane</title>
 <script language="javascript" src="kalendarz/calendar/calendar.js"></script>
-<script language="javascript">
+
 <!--
 function showDateSelected(){
    alert("Date selected is "+document.form2.date5.value);
@@ -23,7 +20,7 @@ function myChanged(v){
 	alert("Hello, value has been changed : "+document.getElementById("date5").value+"["+v+"]");
 }
 //-->
-</script>
+
 
 <link href="kalendarz/calendar/calendar.css" rel="stylesheet" type="text/css">
 </head>
@@ -31,10 +28,12 @@ function myChanged(v){
 <body>
 
 <?php
-$getData4 = $_GET['date4'];
+    $date4;
+
+$getDate4 = $_GET['date4']; // jeśli nie dostanie daty z get to pobiera aktualną
 if (!$getDate4){
-	$getData4 = date("Y/m/d");
-	echo $getData4;
+	$getDate4 = date("Y/m/d");
+//	echo $getData4;
 }
 
 $tpl = "<form name='form2' method='get' action='/new_wyk5.php'>";
