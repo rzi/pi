@@ -23,13 +23,5 @@ Python - oprogramowanie modułu pomiarowego<br>
 <h2>Pomiar temperatury- Monitor danych (archiwum)</h2>
 <a href="new_wyk5.php">Pomiar temperatury - wykresy >>></a><br>
 <a href="new_cz.php">Pomiar temperatury - dane >>></a><br>
-<?php
-session_start();
-if($_GET["wyloguj"]=="tak"){$_SESSION["zalogowany"]=0;echo "Zostals wylogowany z serwisu";}
-
-//echo $_SERVER['HTTP_USER_AGENT'];
-
-?>
-
 </body>
 </html>

@@ -1,10 +1,10 @@
 p, form { margin: 0; /*display: inline;*/}
 body { margin: 10px 0px 0px 0px;
-padding: 0 10px ;
+padding: 0 5px ;
 }
 html, body, input, select {
 /*    color: #009530;*/
-    font-size: 16px;
+    font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: left;
     width:auto;
@@ -35,11 +35,15 @@ td{
     width: 80vw;
 }
 
-h2{
+h1{
     text-align-last: center;
 }
 .dane{
+/*
 
     padding-left: 50px;
-    margin: 20px;
+    margin: 10px;
+*/
+    text-align: center;
+    margin-bottom: 20px;
 }
