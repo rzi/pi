@@ -21,7 +21,7 @@
     <div class="dane">
 
         Obiekt Pomiarowy:
-        <select name="objektPomiarowy">
+        <select name="objektPomiarowy" id="objektPomiarowy">
             <option value="18">Temp. Zewnętrzna</option>
             <option value="25">Gabinet</option>
             <option value="22">Salon</option>
