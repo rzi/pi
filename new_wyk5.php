@@ -29,12 +29,12 @@ function myChanged(v){
 </head>
 
 <body>
-<?php include_once("analyticstracking.php") ?>
+
 <?php
 $getData4 = $_GET['date4'];
 if (!$getDate4){
 	$getData4 = date("Y/m/d");
-	//echo $getData4;
+	echo $getData4;
 }
 
 $tpl = "<form name='form2' method='get' action='/new_wyk5.php'>";
@@ -71,9 +71,9 @@ echo '<h2 ALIGN="center">Pomiar temperatury- wykresy</h2>';
 
 ?>
 
-<a href="http://192.168.100.6/index.php"><<< Powrót</a><br>
-<a href="http://192.168.100.6/script3.php">>>> Nowy wykres godziowy </a><br>
-<a href="http://192.168.100.6/script4.php">>>> Nowy wykres dzienny </a>
+<a href="index.php"><<< Powrót</a><br>
+<a href="script3.php">>>> Nowy wykres godziowy </a><br>
+<a href="script4.php">>>> Nowy wykres dzienny </a>
 
 <?php
 echo '<br>';
@@ -316,7 +316,7 @@ echo('</form>');
 
 ?>
 
-<img src="pi.png"> <br>
+<img src="/pi/img/pi.png"> <br>
 
 </body>
 </html>
