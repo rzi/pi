@@ -6,6 +6,14 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <title>Formularz dane</title>
     <link rel="stylesheet" href="/pi/css/style.css" type="text/css" />
+    <!--//jquery   -->
+
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="/pi/js/skrypt.js"></script>
 </head>
 
 <body>
@@ -47,8 +55,8 @@
             <option value="4">Pompa cyrkulacja</option>
             <option value="30">wolne</option>
         </select>
-        Data: <input type="date" name="datepicker">
-        Czas: <input type="time" name="timepicker">
+        Data: <input type="date" name="datepicker" id="datepicker">
+        Czas: <input type="time" name="timepicker" id="timepicker">
         <input type="button" name="przycisk1" id="przycisk1" value="wykres">
     </div>
     <div class="chart-container">
