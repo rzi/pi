@@ -1,16 +1,13 @@
 ﻿<!doctype html>
 <html lang="pl-PL">
-
 <head>
 <title>Pomiar temperatury Raspberry PI</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="/css/style.css" type="text/css" />
-
 </head>
 <body>
-
-<h2 align="center">Pomiar temperatury i zapis w bazie danych</h2>
+<h1 align="center">Pomiar temperatury i zapis w bazie danych</h1>
 <h2 align="left">Opis projektu.</h2>
 <p>Celem projektu są pomiary temperatur, ich
 zapis do zewnętrznej bazy danych oraz sterowanie zaworami ogrzewania podłogowego</p>
@@ -19,7 +16,6 @@ zapis do zewnętrznej bazy danych oraz sterowanie zaworami ogrzewania podłogowe
 <p>Czujnik temperatury DS18B20<br>
 Moduł interfejsu One wire na USB firmy Meraprojekt (FT232RL + DS2480)<br>
 Raspberry Pi jako serwer<br>
-Moduł Piface<br>
 Moduł 8 przekaźników </p>
 <h3>2.Software:</h3>
 <p>Serwer HTTP (Apache, PHP, MySQL) <br>
