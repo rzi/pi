@@ -1,4 +1,5 @@
 p, form { margin: 0; /*display: inline;*/}
+<<<<<<< HEAD
 body { margin: 0px 0px 0px 0px; }
 html, body, input, select {
     color: #009530;
@@ -12,3 +13,53 @@ html, body, input, select {
  td{
     padding: 5px;
 }
+=======
+body { margin: 10px 0px 0px 0px;
+padding: 0 5px ;
+}
+html, body, input, select {
+/*    color: #009530;*/
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    width:auto;
+    padding: 0 10px ;
+
+}
+td{
+    padding: 5px;
+}
+/*
+.wykres{
+
+    width: 500px;
+    height: 500px;
+}
+*/
+
+/*
+#myChart{
+    width:400px;
+    height: 600px;
+}
+*/
+.chart-container {
+    position: relative;
+    margin: auto;
+    height:40vh;
+    width: 80vw;
+}
+
+h1{
+    text-align-last: center;
+}
+.dane{
+/*
+
+    padding-left: 50px;
+    margin: 10px;
+*/
+    text-align: center;
+    margin-bottom: 20px;
+}
+>>>>>>> origin/master
