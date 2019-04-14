@@ -27,14 +27,18 @@ $(document).ready(function () {
 
   var obiekt;
 
-  var sel = document.getElementById('objektPomiarowy');
-  obiekt=sel.value
+  $("#objektPomiarowy").click (function(){
+    var sel = document.getElementById('objektPomiarowy');
+    var x = document.getElementById("objektPomiarowy").selectedIndex;
+    var y = document.getElementById("objektPomiarowy").options;
+    //alert("Index: " + y[x].index );
+    obiekt=y[x].index
+  });
 
   var teraz = new Date;
 
   function getTime() {
     var wynik = teraz.getHours() + ":" + teraz.getMinutes();
-
     // do sprawdzenia dodawanie 0 przed min jeśli <10
     if (teraz.getMinutes() < 10) {
       var wynik = teraz.getHours() + ":" + "0" + teraz.getMinutes();
@@ -77,8 +81,44 @@ $(document).ready(function () {
         $.each(response1, function (key, data1) {
           data2=chart.data.datasets[0].data[i] =data1;
           label2=chart.data.labels[i]=key;
+
+
+          // konwersja timestamp
+          // Unixtimestamp
+          var unixtimestamp = label2;
+
+          // Months array
+          //var months_arr = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+
+          // Convert timestamp to milliseconds
+          var date = new Date(unixtimestamp*1000);
+
+          // Year
+          var year = date.getFullYear();
+
+          // Month
+         // var month = months_arr[date.getMonth()];
+          var month = date.getMonth();
+          // Day
+          var day = date.getDate();
+
+          // Hours
+          var hours = date.getHours();
+
+          // Minutes
+          var minutes = "0" + date.getMinutes();
+
+          // Seconds
+          var seconds = "0" + date.getSeconds();
+
+          // Display date time in MM-dd-yyyy h:m:s format
+         // var convdataTime = year+'-'+month+'-'+day+' '+hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);
+          var convdataTime = year+'-'+month+'-'+day+' '+hours + ':' + minutes.substr(-2);
+
+          label2=convdataTime.slice(-5);
           console.log(label2);
           console.log(data2);
+          chart.data.labels[i]=label2;
           i=i+1;
         })
         chart.update();

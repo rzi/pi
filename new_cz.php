@@ -7,14 +7,9 @@
 <title>Odczyt czujników</title>
 </head>
 <body>
-<a href="index.php"><<< Powrót</a>
- </br>
-<a href="http://localhost/new_zmiana.php"> Edycja >>></a>
-<!-- <br> -->
+<a href="index.php">Powrót</a>
 <?php
-
-
-// -Łczymy się z bazą danych
+    // -Łczymy się z bazą danych
 	require "connection_pi_base.php";
 	connection_pi_base();
 	//SELECT `my_epoch`,`nr_hex` ,`temp`,`my_pomieszczenie` FROM pomiary2 JOIN pomieszczenie ON pomiary2.id=pomieszczenie.id ORDER BY pomiary2.id DESC LIMIT 29
@@ -23,7 +18,6 @@
 		if(mysqli_num_rows($wynik1) > 0) {
 			echo '<table border=1 style= "border-collapse:collapse">';
 			echo '<caption> Tabela zainstalowanych czujników</caption>';
-
 			echo '<tr align="center">';
 			echo '<td> Nr. zapisu </td>';
 			echo '<td> Temperatura</td>';
@@ -33,8 +27,6 @@
 			echo '<td> Czas zapisu</td>';
 			echo '<td> Pomieszczenie</td>';
 			echo '</tr>';
-
-
 			while($r = mysqli_fetch_assoc($wynik1)) {
 				echo '<tr align="center">';
 				echo '<td>';
