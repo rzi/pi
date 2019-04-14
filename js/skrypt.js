@@ -28,20 +28,7 @@ $(document).ready(function () {
   var obiekt;
   var godzina;
 
-  $("#objektPomiarowy").click (function(){
-    var sel = document.getElementById('objektPomiarowy');
-    var x = document.getElementById("objektPomiarowy").selectedIndex;
-    var y = document.getElementById("objektPomiarowy").options;
-    //alert("Index: " + y[x].index );
-    obiekt=y[x].index
-  });
 
-    $('#timepicker1').change (function(){
-        godzina=document.getElementById("timepicker1").value;
-        godzina=godzina+":00";
-        alert(godzina);
-
-    });
 
   var teraz = new Date;
 
@@ -66,6 +53,29 @@ $(document).ready(function () {
   var dateControl = document.querySelector('input[type="date"]');
   //    alert("Jest data: " + dzien);
   dateControl.value = dzien;
+
+
+  $("#objektPomiarowy").click (function(){
+    var sel = document.getElementById('objektPomiarowy');
+    var x = document.getElementById("objektPomiarowy").selectedIndex;
+    var y = document.getElementById("objektPomiarowy").options;
+    //alert("Index: " + y[x].index );
+    obiekt=y[x].index
+  });
+
+  $('#timepicker1').change (function(){
+    godzina=document.getElementById("timepicker1").value;
+    godzina=godzina+":00";
+    //alert(godzina);
+
+  });
+
+  $('#datepicker1').change (function(){
+    //alert("AAAA");
+    dzien=document.querySelector('input[type="date"]').value;
+    alert(dzien);
+
+  });
 
   $("#przycisk1").click(function () {
     //alert("przycisk1");
