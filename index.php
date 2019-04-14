@@ -1,19 +1,10 @@
 ﻿<!doctype html>
 <html lang="pl-PL">
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/master
 <head>
 <title>Pomiar temperatury Raspberry PI</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<<<<<<< HEAD
-<link rel="stylesheet" href="/css/style.css" type="text/css" />
-
-=======
 <link rel="stylesheet" href="/pi/css/style.css" type="text/css" />
->>>>>>> origin/master
 </head>
 <body>
 <h1 align="center">Pomiar temperatury i zapis w bazie danych</h1>

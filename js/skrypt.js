@@ -26,6 +26,7 @@ $(document).ready(function () {
 
 
   var obiekt;
+  var godzina;
 
   $("#objektPomiarowy").click (function(){
     var sel = document.getElementById('objektPomiarowy');
@@ -37,7 +38,8 @@ $(document).ready(function () {
 
     $('#timepicker1').change (function(){
         godzina=document.getElementById("timepicker1").value;
-        //alert(godzina1);
+        godzina=godzina+":00";
+        alert(godzina);
 
     });
 
