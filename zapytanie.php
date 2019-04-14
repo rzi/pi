@@ -10,7 +10,7 @@ header("Content-Type: application/json;charset=utf-8");
      $zm2= $dzien ." ".$godzina .":00";
     $zm1=strtotime($zm2);
 //    echo "<br>\r\n";
-//    echo $zm1;
+    echo $zm1;
 //    echo "<br>\r\n";
 
 
