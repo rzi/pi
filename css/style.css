@@ -1,9 +1,6 @@
-p, form { margin: 0; /*display: inline;*/}
-
-body { margin: 0px 0px 0px 0px; }
 html, body, input, select {
 /*    color: #009530;*/
-    font-size: 16px;
+    font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: left;
     width:auto;
