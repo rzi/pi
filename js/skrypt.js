@@ -24,11 +24,8 @@ $(document).ready(function () {
   });
   //js konies
 
-
   var obiekt;
   var godzina;
-
-
 
   var teraz = new Date;
 
@@ -43,7 +40,6 @@ $(document).ready(function () {
   }
 
   var godzina = getTime();
-  //    alert("Jest godzina " + godzina);
 
   var timeControl = document.querySelector('input[type="time"]');
   timeControl.value = godzina;
@@ -51,7 +47,6 @@ $(document).ready(function () {
   var dzien = teraz.getFullYear() + '-' + ((teraz.getMonth() < 9 ? '0' : '') + (teraz.getMonth() + 1)) + '-' + ((teraz.getDate() < 9 ? '0' : '') + teraz.getDate());
 
   var dateControl = document.querySelector('input[type="date"]');
-  //    alert("Jest data: " + dzien);
   dateControl.value = dzien;
 
 
@@ -62,21 +57,13 @@ $(document).ready(function () {
     //alert("Index: " + y[x].index );
     obiekt=y[x].index
   });
-
   $('#timepicker1').change (function(){
     godzina=document.getElementById("timepicker1").value;
     godzina=godzina+":00";
-    //alert(godzina);
-
   });
-
   $('#datepicker1').change (function(){
-    //alert("AAAA");
     dzien=document.querySelector('input[type="date"]').value;
-    alert(dzien);
-
   });
-
   $("#przycisk1").click(function () {
     //alert("przycisk1");
     var i=0;
@@ -93,9 +80,6 @@ $(document).ready(function () {
         godzina: godzina
         },
       success: function (response1) {
-		//alert("succes");
-        //console.log(response1); // odpowiedź JSON z zapytanie.php
-        //alert(chart.data.labels[0]);
         $.each(response1, function (key, data1) {
           data2=chart.data.datasets[0].data[i] =data1;
           label2=chart.data.labels[i]=key;
@@ -141,12 +125,10 @@ $(document).ready(function () {
         })
         chart.update();
         },
-
       fail: function (blad) {
         alert("Wystąpił błąd");
         console.log(blad);
       }
-
     }); // koniec ajax
   }); //koniec  przycisk 1
 }); /*Klamra zamykająca $(document).ready(function(){*/
