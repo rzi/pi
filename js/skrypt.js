@@ -1,13 +1,44 @@
 /*Ustawienie wykonania działań wówczas, gdy strona jest całkowicie wczytana */
 $(document).ready(function () {
+  // js---
+
+  var ctx = document.getElementById('myChart').getContext('2d');
+  var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'line',
+
+    // The data for our dataset
+    data: {
+      labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+      datasets: [{
+        label: 'Pomiar temperatury',
+        borderColor: 'rgb(55, 39, 250)',
+        data: [0, 10, 5, 2, 20, 30, 45],
+        fill: false,
+        A:[1]
+      }]
+    },
+
+    // Configuration options go here
+    options: {}
+  });
+  //js konies
+
+
   var obiekt;
-  obiekt = document.getElementById('objektPomiarowy');
+
+  $("#objektPomiarowy").click (function(){
+    var sel = document.getElementById('objektPomiarowy');
+    var x = document.getElementById("objektPomiarowy").selectedIndex;
+    var y = document.getElementById("objektPomiarowy").options;
+    //alert("Index: " + y[x].index );
+    obiekt=y[x].index
+  });
 
   var teraz = new Date;
 
   function getTime() {
     var wynik = teraz.getHours() + ":" + teraz.getMinutes();
-
     // do sprawdzenia dodawanie 0 przed min jeśli <10
     if (teraz.getMinutes() < 10) {
       var wynik = teraz.getHours() + ":" + "0" + teraz.getMinutes();
@@ -29,31 +60,81 @@ $(document).ready(function () {
   dateControl.value = dzien;
 
   $("#przycisk1").click(function () {
-    alert("przycisk1");
+    //alert("przycisk1");
+    var i=0;
+    var j;
+    var k;
     $.ajax({
       async: true,   // this will solve the problem
       type: "GET",
-      /*Informacja o tym, że dane będą wysyłane*/
+      dataType : 'json',
       url: "zapytanie.php",
-      /*Informacja, o tym jaki plik będzie przy tym wykorzystywany*/
-      data: {
+  	  data: {
         obiekt: obiekt,
         dzien: dzien,
         godzina: godzina
+        },
+      success: function (response1) {
+		//alert("succes");
+        //console.log(response1); // odpowiedź JSON z zapytanie.php
+        //alert(chart.data.labels[0]);
+        $.each(response1, function (key, data1) {
+          data2=chart.data.datasets[0].data[i] =data1;
+          label2=chart.data.labels[i]=key;
 
-      },
-      done: function () {
-        /*Zdefiniowanie tzw. alertu (prostej informacji) w sytacji sukcesu wysyłania. */
-      },
+
+          // konwersja timestamp
+          // Unixtimestamp
+          var unixtimestamp = label2;
+
+          // Months array
+          //var months_arr = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+
+          // Convert timestamp to milliseconds
+          var date = new Date(unixtimestamp*1000);
+
+          // Year
+          var year = date.getFullYear();
+
+          // Month
+         // var month = months_arr[date.getMonth()];
+          var month = date.getMonth();
+          // Day
+          var day = date.getDate();
+
+          // Hours
+          var hours = date.getHours();
+
+          // Minutes
+          var minutes = "0" + date.getMinutes();
+
+          // Seconds
+          var seconds = "0" + date.getSeconds();
+
+          // Display date time in MM-dd-yyyy h:m:s format
+         // var convdataTime = year+'-'+month+'-'+day+' '+hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);
+          var convdataTime = year+'-'+month+'-'+day+' '+hours + ':' + minutes.substr(-2);
+
+          label2=convdataTime.slice(-5);
+          console.log(label2);
+          console.log(data2);
+          chart.data.labels[i]=label2;
+          i=i+1;
+        })
+        chart.update();
+        },
+
       fail: function (blad) {
         alert("Wystąpił błąd");
         console.log(blad);
-        /*Funkcja wyświetlająca informacje
-                o ewentualnym błędzie w konsoli przeglądarki*/
       }
-    });
 
+    }); // koniec ajax
+//    function getDateTimeFromTimestamp(unixTimeStamp) {
+//     // var date = new Date(unixTimeStamp);
+//
+//      return (date.getFullYear()+'-'+  ('0' + (date.getMonth() + 1)).slice(-2) + '- '+'0' + date.getDate()).slice(-2) + ' ' + ('0' + date.getHours()).slice(-2) + ':' + ('0' + date.getMinutes()).slice(-2);
+//    }
 
-  });
-
+  }); //koniec  przycisk 1
 }); /*Klamra zamykająca $(document).ready(function(){*/
