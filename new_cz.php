@@ -1,7 +1,5 @@
 ﻿<!doctype html>
 <html lang="pl-PL">
-<<<<<<< HEAD
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,32 +7,8 @@
 <title>Odczyt czujników</title>
 </head>
 <body>
-<div>
-   <a href="index.php"><<< Powrót</a>
-<!-- </br> -->
-</div>
-<div>
-  <a href="http://localhost/new_zmiana.php"> Edycja >>></a>
-=======
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/pi/css/style.css" type="text/css" />
-<title>Odczyt czujników</title>
-</head>
-<body>
-<<<<<<< HEAD
-<a href="index.php"><<< Powrót</a>
- </br>
-<a href="http://localhost/new_zmiana.php"> Edycja >>></a>
->>>>>>> origin/master
-<!-- <br> -->
-
-</div>
-
-=======
 <a href="index.php">Powrót</a>
->>>>>>> origin/master
+ <br/>
 <?php
     // -Łczymy się z bazą danych
 	require "connection_pi_base.php";

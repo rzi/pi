@@ -34,6 +34,10 @@ $(document).ready(function () {
     //alert("Index: " + y[x].index );
     obiekt=y[x].index
   });
+  $("#timepicker").change (function(){
+   godzina=('#timepicker').val();
+      alert(godzina);
+  });
 
   var teraz = new Date;
 
@@ -130,11 +134,5 @@ $(document).ready(function () {
       }
 
     }); // koniec ajax
-//    function getDateTimeFromTimestamp(unixTimeStamp) {
-//     // var date = new Date(unixTimeStamp);
-//
-//      return (date.getFullYear()+'-'+  ('0' + (date.getMonth() + 1)).slice(-2) + '- '+'0' + date.getDate()).slice(-2) + ' ' + ('0' + date.getHours()).slice(-2) + ':' + ('0' + date.getMinutes()).slice(-2);
-//    }
-
   }); //koniec  przycisk 1
 }); /*Klamra zamykająca $(document).ready(function(){*/
