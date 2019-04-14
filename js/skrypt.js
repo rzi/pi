@@ -34,10 +34,12 @@ $(document).ready(function () {
     //alert("Index: " + y[x].index );
     obiekt=y[x].index
   });
-  $("#timepicker").change (function(){
-   godzina=('#timepicker').val();
-      alert(godzina);
-  });
+
+    $('#timepicker1').change (function(){
+        godzina=document.getElementById("timepicker1").value;
+        //alert(godzina1);
+
+    });
 
   var teraz = new Date;
 
