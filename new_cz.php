@@ -3,11 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/pi/css/style.css" type="text/css" />
+<link rel="stylesheet" href="css/style.css" type="text/css" />
 <title>Odczyt czujników</title>
 </head>
 <body>
 <a href="index.php">Powrót</a>
+ <br/>
 <?php
     // -Łczymy się z bazą danych
 	require "connection_pi_base.php";

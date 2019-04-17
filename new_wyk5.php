@@ -12,6 +12,13 @@
             crossorigin="anonymous"></script>
 
     <script type="text/javascript" src="/pi/js/skrypt.js"></script>
+  <?php
+  header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
+  header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+  header("Cache-Control: post-check=0, pre-check=0", false);
+  header("Pragma: no-cache");
+  header("Connection: close");
+  ?>
 </head>
 <body>
     <h1>Pomiary temperatur - wykresy </h1>
@@ -51,8 +58,8 @@
            <option value="4">Pompa cyrkulacja</option>
            <option value="30">wolne</option>
         </select>
-        Data: <input type="date" name="datepicker" id="datepicker">
-        Czas: <input type="time" name="timepicker" id="timepicker">
+        Data: <input type="date" name="datepicker" id="datepicker1">
+        Czas: <input type="time" name="timepicker" id="timepicker1">
         <input type="button" name="przycisk1" id="przycisk1" value="wykres">
     </div>
     <a href="index.php">Powrót</a>

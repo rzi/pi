@@ -6,11 +6,14 @@ header("Content-Type: application/json;charset=utf-8");
   $tabLabel;
   $tabData;
   $tabObjekt;
+  $zm2= $dzien ." ".$godzina ;
+  $zm1=strtotime($zm2);
 
-  // -Łczymy się z bazą danych
+// -Łczymy się z bazą danych
   require "connection_pi_base.php";
   connection_pi_base();
-  $wynik1 = mysqli_query($link,"SELECT * FROM pomiary2 WHERE `nr_czujnika`=$obiekt ORDER BY `id` DESC LIMIT 1440")
+  //$wynik1 = mysqli_query($link,"SELECT * FROM pomiary2 WHERE `my_epoch` > $zm1 AND WHERE `nr_czujnika`=$obiekt ORDER BY `id` DESC LIMIT 1440")
+  $wynik1 = mysqli_query($link,"SELECT * FROM pomiary2 WHERE `my_epoch` > $zm1 AND `nr_czujnika`=$obiekt  ORDER BY `id` DESC LIMIT 1440")
     or die('Błąd zapytania');
   mysqli_close($link);
 
@@ -33,8 +36,6 @@ header("Content-Type: application/json;charset=utf-8");
       // echo "<br>\r\n";
     };
   };
-  //	$myArr = array("John", "Mary", "Peter", "Sally");
   $myJSON = json_encode($tabData);
   echo $myJSON;
-  //   echo "<br>\r\n";
 ?>
