@@ -62,8 +62,9 @@
         Czas: <input type="time" name="timepicker" id="timepicker1">
         <input type="button" name="przycisk1" id="przycisk1" value="wykres">
     </div>
-    <a href="index.php">Powrót</a>
+
     <div class="chart-container">
+        <a href="index.php">Powrót</a>
         <canvas id="myChart"></canvas>
     </div>
 </body>
