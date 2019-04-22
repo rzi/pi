@@ -14,7 +14,7 @@ header("Content-Type: application/json;charset=utf-8");
   require "connection_pi_base.php";
   connection_pi_base();
   //$wynik1 = mysqli_query($link,"SELECT * FROM pomiary2 WHERE `my_epoch` > $zm1 AND WHERE `nr_czujnika`=$obiekt ORDER BY `id` DESC LIMIT 1440")
-  $wynik1 = mysqli_query($link,"SELECT my_epoch ,temp FROM pomiary2 WHERE `my_epoch` > $zm1 AND `nr_czujnika`=$obiekt  ORDER BY `id` DESC LIMIT 1440")
+  $wynik1 = mysqli_query($link,"SELECT my_epoch , temp FROM pomiary2 WHERE `my_epoch` > $zm1 AND `nr_czujnika`=$obiekt  ORDER BY `id` DESC LIMIT 1440")
     or die('Błąd zapytania');
   mysqli_close($link);
 
