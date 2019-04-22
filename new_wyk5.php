@@ -58,8 +58,16 @@
            <option value="4">Pompa cyrkulacja</option>
            <option value="30">wolne</option>
         </select>
-        Data: <input type="date" name="datepicker" id="datepicker1">
+
+        Data od: <input type="date" name="datepicker" id="datepicker1">
+
         Czas: <input type="time" name="timepicker" id="timepicker1">
+
+
+        Data do: <input type="date" name="datepicker2" id="datepicker2" class="datepicker2">
+
+        Czas: <input type="time" name="timepicker2" id="timepicker2" class="timepicker2">
+
         <input type="button" name="przycisk1" id="przycisk1" value="wykres">
     </div>
 

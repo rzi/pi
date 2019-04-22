@@ -24,8 +24,10 @@ $(document).ready(function () {
   });
   //js konies
 
-  var obiekt;
-  var godzina;
+    var obiekt;
+    var godzina;
+    var godzina2;
+    obiekt=2;
 
   var teraz = new Date;
 
@@ -40,14 +42,23 @@ $(document).ready(function () {
   }
 
   var godzina = getTime();
+    var godzina2 = getTime();
 
   var timeControl = document.querySelector('input[type="time"]');
   timeControl.value = godzina;
 
+    var timeControl2 = document.querySelector('input[type="time"].timepicker2');
+  timeControl2.value = godzina2;
+
   var dzien = teraz.getFullYear() + '-' + ((teraz.getMonth() < 9 ? '0' : '') + (teraz.getMonth() + 1)) + '-' + ((teraz.getDate() < 9 ? '0' : '') + teraz.getDate());
 
+     var wczoraj = teraz.getFullYear() + '-' + ((teraz.getMonth() < 9 ? '0' : '') + (teraz.getMonth() + 1)) + '-' + ((teraz.getDate() < 9 ? '0' : '') + teraz.getDate()-1);
+
   var dateControl = document.querySelector('input[type="date"]');
-  dateControl.value = dzien;
+  dateControl.value = wczoraj;
+
+    var dateControl2 = document.querySelector('input[type="date"].datepicker2');
+  dateControl2.value = dzien;
 
 
   $("#objektPomiarowy").click (function(){
@@ -61,7 +72,14 @@ $(document).ready(function () {
     godzina=document.getElementById("timepicker1").value;
     godzina=godzina+":00";
   });
+    $('#timepicker2').change (function(){
+    godzina2=document.getElementById("timepicker2").value;
+    godzina2=godzina2+":00";
+  });
   $('#datepicker1').change (function(){
+    wczoraj=document.querySelector('input[type="date"]').value;
+  });
+      $('#datepicker2').change (function(){
     dzien=document.querySelector('input[type="date"]').value;
   });
   $("#przycisk1").click(function () {
@@ -76,8 +94,10 @@ $(document).ready(function () {
       url: "zapytanie.php",
   	  data: {
         obiekt: obiekt,
+        wczoraj:wczoraj,
         dzien: dzien,
-        godzina: godzina
+        godzina: godzina,
+        godzina2: godzina2
         },
       success: function (response1) {
         $.each(response1, function (key, data1) {
@@ -101,6 +121,10 @@ $(document).ready(function () {
           // Month
          // var month = months_arr[date.getMonth()];
           var month = date.getMonth();
+            month=month+1;
+            if (month<10){
+                month="0"+month;
+            }
           // Day
           var day = date.getDate();
 

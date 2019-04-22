@@ -3,18 +3,23 @@ header("Content-Type: application/json;charset=utf-8");
   $obiekt = $_GET['obiekt'];
   $dzien = $_GET['dzien'];
   $godzina = $_GET['godzina'];
+    $godzina2=$_GET['godzina2'];
+  $wczoraj=$_GET['wczoraj'];
   $tabLabel;
   $tabData;
   $tabObjekt;
-  $zm2= $dzien ." ".$godzina ;
-  $zm1=strtotime($zm2);
+  $zm2= $dzien ." ".$godzina2 ;
+  $do=strtotime($zm2);
 
+    $zm3=$wczoraj." ".$godzina;
+    $od=strtotime($zm3);
+//echo $od;
 
 // -Łczymy się z bazą danych
   require "connection_pi_base.php";
   connection_pi_base();
   //$wynik1 = mysqli_query($link,"SELECT * FROM pomiary2 WHERE `my_epoch` > $zm1 AND WHERE `nr_czujnika`=$obiekt ORDER BY `id` DESC LIMIT 1440")
-  $wynik1 = mysqli_query($link,"SELECT my_epoch , temp FROM pomiary2 WHERE `my_epoch` > $zm1 AND `nr_czujnika`=$obiekt  ORDER BY `id` DESC LIMIT 1440")
+  $wynik1 = mysqli_query($link,"SELECT my_epoch , temp FROM pomiary2 WHERE `my_epoch` BETWEEN $od AND $do AND `nr_czujnika`=$obiekt  ORDER BY `id` DESC LIMIT 1440")
     or die('Błąd zapytania');
   mysqli_close($link);
 
