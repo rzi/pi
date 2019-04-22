@@ -117,7 +117,7 @@ $(document).ready(function () {
          // var convdataTime = year+'-'+month+'-'+day+' '+hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);
           var convdataTime = year+'-'+month+'-'+day+' '+hours + ':' + minutes.substr(-2);
 
-          label2=convdataTime.slice(-5);
+          label2=convdataTime;
           console.log(label2);
           console.log(data2);
           chart.data.labels[i]=label2;
