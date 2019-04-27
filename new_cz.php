@@ -19,7 +19,7 @@
 		if(mysqli_num_rows($wynik1) > 0) {
 			echo '<table >';
 			echo '<caption> Tabela zainstalowanych czujników</caption>';
-			echo '<tr ">';
+			echo '<tr>';
 			echo '<td> Nr. zapisu </td>';
 			echo '<td> Temperatura</td>';
 			echo '<td> Nr. Dec czujnika</td>';
