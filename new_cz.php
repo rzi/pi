@@ -10,7 +10,7 @@
 <a href="index.php">Powrót</a>
  <br/>
 <?php
-    // -Łczymy się z bazą danych
+    // Łączymy się z bazą danych
 	require "connection_pi_base.php";
 	connection_pi_base();
 	//SELECT `my_epoch`,`nr_hex` ,`temp`,`my_pomieszczenie` FROM pomiary2 JOIN pomieszczenie ON pomiary2.id=pomieszczenie.id ORDER BY pomiary2.id DESC LIMIT 29
