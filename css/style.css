@@ -36,4 +36,8 @@ table, tr,th,td{
 tr{
   text-align: center;
 }
+.contener{
+  display:grid;
+  justify-content: center;
 
+}
