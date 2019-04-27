@@ -3,7 +3,7 @@ header("Content-Type: application/json;charset=utf-8");
   $obiekt = $_GET['obiekt'];
   $dzien = $_GET['dzien'];
   $godzina = $_GET['godzina'];
-    $godzina2=$_GET['godzina2'];
+  $godzina2=$_GET['godzina2'];
   $wczoraj=$_GET['wczoraj'];
   $tabLabel;
   $tabData;
