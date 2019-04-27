@@ -11,7 +11,7 @@
             integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
             crossorigin="anonymous"></script>
 
-    <script type="text/javascript" src="/js/skrypt.js"></script>
+    <script src="/js/skrypt.js"></script>
 
   <?php
   header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
