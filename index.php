@@ -8,11 +8,11 @@
 </head>
 <body>
 <div>
-  <h1 align="center">Pomiar temperatury i zapis w bazie danych</h1>
-  <h2 align="left">Opis projektu.</h2>
+  <h1 >Pomiar temperatury i zapis w bazie danych</h1>
+  <h2 >Opis projektu.</h2>
   <p>Celem projektu są pomiary temperatur, ich
     zapis do zewnętrznej bazy danych oraz sterowanie zaworami ogrzewania podłogowego</p>
-  <img src="/img/schemat_rpi.png"> <br>
+  <img alt="Pi" src="/img/schemat_rpi.png"> <br>
   <h3>1.Hardware:</h3>
   <p>Czujnik temperatury DS18B20<br>
     Moduł interfejsu One wire na USB firmy Meraprojekt (FT232RL + DS2480)<br>
