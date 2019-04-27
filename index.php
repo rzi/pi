@@ -4,11 +4,7 @@
 <title>Pomiar temperatury Raspberry PI</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<<<<<<< HEAD
-<link rel="stylesheet" href="/pi/css/style.css" type="text/css" />
-=======
 <link rel="stylesheet" href="/css/style.css" type="text/css" />
->>>>>>> 27/04
 </head>
 <body>
 <div>
@@ -16,11 +12,7 @@
   <h2 align="left">Opis projektu.</h2>
   <p>Celem projektu są pomiary temperatur, ich
     zapis do zewnętrznej bazy danych oraz sterowanie zaworami ogrzewania podłogowego</p>
-<<<<<<< HEAD
-  <img src="/pi/img/schemat_rpi.png"> <br>
-=======
   <img src="/img/schemat_rpi.png"> <br>
->>>>>>> 27/04
   <h3>1.Hardware:</h3>
   <p>Czujnik temperatury DS18B20<br>
     Moduł interfejsu One wire na USB firmy Meraprojekt (FT232RL + DS2480)<br>
