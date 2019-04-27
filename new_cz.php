@@ -17,7 +17,7 @@
    	//$wynik1 = mysql_query("select *cz.nr_hex, cz.numer,cz.nr_odczyt, n.nazwa, cz.data, cz.czas
 	if ($wynik1 = mysqli_query($link,"SELECT * FROM pomiary2 LEFT OUTER JOIN pomieszczenie  ON pomiary2.nr_czujnika=pomieszczenie.my_nr_dec ORDER BY pomiary2.id DESC LIMIT 29")){
 		if(mysqli_num_rows($wynik1) > 0) {
-			echo '<table border=1 style= "border-collapse:collapse">';
+			echo '<table >';
 			echo '<caption> Tabela zainstalowanych czujników</caption>';
 			echo '<tr align="center">';
 			echo '<td> Nr. zapisu </td>';
@@ -29,7 +29,7 @@
 			echo '<td> Pomieszczenie</td>';
 			echo '</tr>';
 			while($r = mysqli_fetch_assoc($wynik1)) {
-				echo '<tr align="center">';
+				echo '<tr >';
 				echo '<td>';
 				echo $r['id'];
 				echo '</td>';
