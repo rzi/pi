@@ -4,22 +4,15 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <title>Formularz dane</title>
-<<<<<<< HEAD
-    <link rel="stylesheet" href="/pi/css/style.css" type="text/css" />
-=======
     <link rel="stylesheet" href="/css/style.css" type="text/css" />
->>>>>>> 27/04
     <!--//jquery   -->
     <script
             src="https://code.jquery.com/jquery-3.3.1.js"
             integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
             crossorigin="anonymous"></script>
 
-<<<<<<< HEAD
-    <script type="text/javascript" src="/pi/js/skrypt.js"></script>
-=======
     <script type="text/javascript" src="/js/skrypt.js"></script>
->>>>>>> 27/04
+
   <?php
   header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
   header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
@@ -77,10 +70,9 @@
         Czas: <input type="time" name="timepicker2" id="timepicker2" class="timepicker2">
 
         <input type="button" name="przycisk1" id="przycisk1" value="wykres">
-<<<<<<< HEAD
-=======
+
 		<input type="button" name="przycisk2" id="przycisk2" value="uporządkuj">
->>>>>>> 27/04
+
     </div>
 
     <div class="chart-container">

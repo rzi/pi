@@ -25,6 +25,5 @@
   <a href="new_wyk5.php">Pomiar temperatury - wykresy >>></a><br>
   <a href="new_cz.php">Pomiar temperatury - dane >>></a><br>
 </div>
-
 </body>
 </html>
