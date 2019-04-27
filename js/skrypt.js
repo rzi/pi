@@ -6,7 +6,10 @@ $(document).ready(function () {
   var chart = new Chart(ctx, {
     // The type of chart we want to create
     type: 'line',
+<<<<<<< HEAD
 
+=======
+>>>>>>> 27/04
     // The data for our dataset
     data: {
       labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
@@ -42,25 +45,43 @@ $(document).ready(function () {
   }
 
   var godzina = getTime();
+<<<<<<< HEAD
     var godzina2 = getTime();
+=======
+  var godzina2 = getTime();
+>>>>>>> 27/04
 
   var timeControl = document.querySelector('input[type="time"]');
   timeControl.value = godzina;
 
+<<<<<<< HEAD
     var timeControl2 = document.querySelector('input[type="time"].timepicker2');
+=======
+  var timeControl2 = document.querySelector('input[type="time"].timepicker2');
+>>>>>>> 27/04
   timeControl2.value = godzina2;
 
   var dzien = teraz.getFullYear() + '-' + ((teraz.getMonth() < 9 ? '0' : '') + (teraz.getMonth() + 1)) + '-' + ((teraz.getDate() < 9 ? '0' : '') + teraz.getDate());
 
+<<<<<<< HEAD
      var wczoraj = teraz.getFullYear() + '-' + ((teraz.getMonth() < 9 ? '0' : '') + (teraz.getMonth() + 1)) + '-' + ((teraz.getDate() < 9 ? '0' : '') + teraz.getDate()-1);
+=======
+  var wczoraj = teraz.getFullYear() + '-' + ((teraz.getMonth() < 9 ? '0' : '') + (teraz.getMonth() + 1)) + '-' + ((teraz.getDate() < 9 ? '0' : '') + teraz.getDate()-1);
+>>>>>>> 27/04
 
   var dateControl = document.querySelector('input[type="date"]');
   dateControl.value = wczoraj;
 
+<<<<<<< HEAD
     var dateControl2 = document.querySelector('input[type="date"].datepicker2');
   dateControl2.value = dzien;
 
 
+=======
+  var dateControl2 = document.querySelector('input[type="date"].datepicker2');
+  dateControl2.value = dzien;
+
+>>>>>>> 27/04
   $("#objektPomiarowy").click (function(){
     var sel = document.getElementById('objektPomiarowy');
     var x = document.getElementById("objektPomiarowy").selectedIndex;
@@ -68,10 +89,15 @@ $(document).ready(function () {
     //alert("Index: " + y[x].index );
     obiekt=y[x].index
   });
+<<<<<<< HEAD
+=======
+
+>>>>>>> 27/04
   $('#timepicker1').change (function(){
     godzina=document.getElementById("timepicker1").value;
     godzina=godzina+":00";
   });
+<<<<<<< HEAD
     $('#timepicker2').change (function(){
     godzina2=document.getElementById("timepicker2").value;
     godzina2=godzina2+":00";
@@ -82,6 +108,31 @@ $(document).ready(function () {
       $('#datepicker2').change (function(){
     dzien=document.querySelector('input[type="date"]').value;
   });
+=======
+
+  $('#timepicker2').change (function(){
+    godzina2=document.getElementById("timepicker2").value;
+    godzina2=godzina2+":00";
+  });
+
+  $('#datepicker1').change (function(){
+    wczoraj=document.querySelector('input[type="date"]').value;
+  });
+
+  $('#datepicker2').change (function(){
+    dzien=document.querySelector('input[type="date"]').value;
+  });
+  $("#przycisk2").click(function () {
+  var j;
+  for (j=0;j<1440;j++){
+	   chart.data.labels.splice(j,1);
+	   chart.data.datasets[0].data.splice (j,1);
+  }
+  chart.update();
+  //alert("ccc");
+  });
+
+>>>>>>> 27/04
   $("#przycisk1").click(function () {
     //alert("przycisk1");
     var i=0;
@@ -104,7 +155,10 @@ $(document).ready(function () {
           data2=chart.data.datasets[0].data[i] =data1;
           label2=chart.data.labels[i]=key;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 27/04
           // konwersja timestamp
           // Unixtimestamp
           var unixtimestamp = label2;
