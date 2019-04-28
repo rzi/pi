@@ -8,6 +8,7 @@
 <title>Odczyt czujników</title>
 </head>
 <body>
+<div class="contener">
 <a href="index.php">Powrót</a>
  <br/>
 <?php
@@ -61,5 +62,6 @@
 	}
 mysqli_close($link);
 ?>
+</div>
 </body>
 </html>
