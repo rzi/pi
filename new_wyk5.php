@@ -63,12 +63,12 @@
 
         Data od: <input type="date" name="datepicker" id="datepicker1">
 
-        Czas: <input type="time" name="timepicker" id="timepicker1">
+        godz: <input type="time" name="timepicker" id="timepicker1">
 
 
         Data do: <input type="date" name="datepicker2" id="datepicker2" class="datepicker2">
 
-        Czas: <input type="time" name="timepicker2" id="timepicker2" class="timepicker2">
+        godz: <input type="time" name="timepicker2" id="timepicker2" class="timepicker2">
 
         <input type="button" name="przycisk1" id="przycisk1" value="wykres">
 
