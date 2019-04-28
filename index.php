@@ -9,7 +9,7 @@
 </head>
 <body>
 <div>
-  <h2 >Pomiar temperatury i zapis w bazie danych</h2>
+  <h3 >Pomiar temperatury i zapis w bazie danych</h3>
   <div class="contener">
     <p>Celem projektu są pomiary temperatur, ich
       zapis do zewnętrznej bazy danych oraz sterowanie zaworami ogrzewania podłogowego</p>
@@ -23,7 +23,7 @@
     <p>Serwer HTTP (Apache, PHP, MySQL) <br>
       Python - oprogramowanie modułu pomiarowego<br>
     <h3>Pomiar temperatury- Monitor danych (archiwum)</h3>
-    <a href="new_wyk5.php">Pomiar temperatury - wykresy >>></a>
+    <a href="new_wyk5.php">Pomiar temperatury - wykresy >>></a><br/>
     <a href="new_cz.php">Pomiar temperatury - dane >>></a>
 `</div>
 </div>
