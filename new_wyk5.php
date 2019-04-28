@@ -28,7 +28,7 @@
         Obiekt Pomiarowy:
         <select name="objektPomiarowy" id="objektPomiarowy">
            <option value="18">Temp. Zewnętrzna</option>
-           <option value="25">Gabinet</option>
+           <option value="1">Gabinet</option>
            <option value="22">Salon</option>
            <option value="29">Korytarz Parter</option>
            <option value="3">Kotlownia</option>
@@ -44,7 +44,7 @@
            <option value="9">Zasobnik zimana</option>
            <option value="28">Zasobnik ciapła</option>
            <option value="21">Wymiennik obw. otwarty WE</option>
-           <option value="1">Wymiennik obw. otwarty WY</option>
+           <option value="25">Wymiennik obw. otwarty WY</option>
            <option value="7">Wymiennik obw. zamknię WE</option>
            <option value="11">Wymiennik obw. zamknię WY</option>
            <option value="23">Pion piętro ciepła</option>
