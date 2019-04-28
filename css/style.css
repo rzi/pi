@@ -1,9 +1,9 @@
 html, body, input, select {
-/*    color: #009530;*/
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: left;
     width:auto;
+/*    margin: 10px;*/
 }
  td{
     padding: 5px;
@@ -16,8 +16,8 @@ html, body, input, select {
     width: 80vw;
 }
 
-h1{
-    text-align-last: center;
+h3{
+/*    text-align-last: center;*/
 }
 
 .dane{
@@ -25,9 +25,6 @@ h1{
     margin-bottom: 20px;
 }
 
-div{
-
-}
 table, tr,th,td{
   border:  1px solid black;
   border-collapse: collapse;
@@ -37,7 +34,19 @@ tr{
   text-align: center;
 }
 .contener{
-  display:grid;
+/*
+  display: grid;
   justify-content: center;
+*/
 
+}
+caption {
+  font-size: 18px;
+  font-weight: bold;
+}
+p{
+  margin-top: 2px;
+}
+body{
+  margin: 10px;
 }

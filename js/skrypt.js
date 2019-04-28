@@ -51,7 +51,6 @@ $(document).ready(function () {
     obiekt=y[x].index
   });
 
-
   $('#timepicker1').change (function(){
     godzina=document.getElementById("timepicker1").value;
   });
@@ -114,7 +113,6 @@ $(document).ready(function () {
   }); //koniec  przycisk 1
 
 // funkcje
-
   function getTime() {
     var godz=teraz.getHours();
 		if (godz<10){
