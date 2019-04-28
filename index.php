@@ -13,7 +13,7 @@
   <div class="contener">
     <p>Celem projektu są pomiary temperatur, ich
       zapis do zewnętrznej bazy danych oraz sterowanie zaworami ogrzewania podłogowego</p>
-    <img alt="Pi" src="/img/schemat_rpi.png"> <br>
+    <img alt="Pi" src="/img/schemat_rpi2.png"> <br>
     <h4>1.Hardware:</h4>
     <p>Czujnik temperatury DS18B20<br>
       Moduł interfejsu One wire na USB firmy Meraprojekt (FT232RL + DS2480)<br>
