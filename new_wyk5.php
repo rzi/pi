@@ -23,8 +23,9 @@
   ?>
 </head>
 <body>
-    <h2>Pomiary temperatur - wykresy </h2><br/>
     <div class="dane">
+    <h2>Pomiary temperatur - wykresy </h2><br/>
+
         Obiekt Pomiarowy:
         <select name="objektPomiarowy" id="objektPomiarowy">
            <option value="18">Temp. Zewnętrzna</option>
