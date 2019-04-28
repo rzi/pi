@@ -22,19 +22,19 @@
 			echo '<table >';
 			echo '<caption> Tabela zainstalowanych czujników</caption>';
 			echo '<tr>';
-			echo '<td> Nr. zapisu </td>';
+//			echo '<td> Nr. zapisu </td>';
 			echo '<td> Temperatura</td>';
 			echo '<td> Nr. Dec czujnika</td>';
 			echo '<td> Nr. Hex czujnika</td>';
-			echo '<td> EPOCH</td>';
+//			echo '<td> EPOCH</td>';
 			echo '<td> Czas zapisu</td>';
 			echo '<td> Pomieszczenie</td>';
 			echo '</tr>';
 			while($r = mysqli_fetch_assoc($wynik1)) {
 				echo '<tr >';
-				echo '<td>';
-				echo $r['id'];
-				echo '</td>';
+//				echo '<td>';
+//				echo $r['id'];
+//				echo '</td>';
 				echo '<td>';
 				echo $r['temp'];
 				echo '</td>';
@@ -44,9 +44,9 @@
 				echo '<td>';
 				echo $r['nr_hex'];
 				echo '</td>';
-				echo '<td>';
-				echo $r['my_epoch'];
-				echo '</td>';
+//				echo '<td>';
+//				echo $r['my_epoch'];
+//				echo '</td>';
 				echo '<td>';
 				//echo $r['time'];
 				$timestamp=$r['my_epoch'];
