@@ -1,6 +1,7 @@
 ﻿<!doctype html>
 <html lang="pl-PL">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <title>Formularz dane</title>
@@ -30,36 +31,36 @@
         <select name="objektPomiarowy" id="objektPomiarowy">
            <option value="18">Temp. Zewnętrzna</option>
            <option value="1">Gabinet</option>
-           <option value="22">Salon</option>
-           <option value="29">Korytarz Parter</option>
-           <option value="3">Kotlownia</option>
-           <option value="19">Łazienka Parter</option>
-           <option value="27">Kuchnia</option>
-           <option value="10">Pokój Ani</option>
-           <option value="6">Sypialnia</option>
-           <option value="20">Korytarz piętro</option>
-           <option value="12">Łazienka piętro</option>
-           <option value="16">Pokój Grzesia</option>
-           <option value="5">Gaz C.O. ciepła</option>
-           <option value="15">Gaz C.O zimna</option>
-           <option value="9">Zasobnik zimana</option>
-           <option value="28">Zasobnik ciapła</option>
-           <option value="21">Wymiennik obw. otwarty WE</option>
-           <option value="25">Wymiennik obw. otwarty WY</option>
-           <option value="7">Wymiennik obw. zamknię WE</option>
-           <option value="11">Wymiennik obw. zamknię WY</option>
-           <option value="23">Pion piętro ciepła</option>
-           <option value="20">Pion pięo zimna</option>
-           <option value="2">Pion parter ciepła</option>
-           <option value="31">Pion parter zimna</option>
-           <option value="0">Zaw. trójdrożny WE</option>
-           <option value="24">Zaw. trójdrożny WY</option>
-           <option value="17">Zaw. trójdrożny Powrót</option>
-           <option value="14">Zaw. ciśnieniowy</option>
-           <option value="13">Podłogó ciepła</option>
-           <option value="26">Podłogówka ziman</option>
-           <option value="4">Pompa cyrkulacja</option>
-           <option value="30">wolne</option>
+           <option value="2">Salon</option>
+           <option value="3">Korytarz Parter</option>
+           <option value="4">Kotlownia</option>
+           <option value="5">Łazienka Parter</option>
+           <option value="6">Kuchnia</option>
+           <option value="7">Pokój Ani</option>
+           <option value="8">Sypialnia</option>
+           <option value="9">Korytarz piętro</option>
+           <option value="10">Łazienka piętro</option>
+           <option value="11">Pokój Grzesia</option>
+           <option value="12">Gaz C.O. ciepła</option>
+           <option value="13">Gaz C.O zimna</option>
+           <option value="14">Zasobnik zimana</option>
+           <option value="15">Zasobnik ciapła</option>
+           <option value="16">Wymiennik obw. otwarty WE</option>
+           <option value="17">Wymiennik obw. otwarty WY</option>
+           <option value="18">Wymiennik obw. zamknię WE</option>
+           <option value="19">Wymiennik obw. zamknię WY</option>
+           <option value="20">Pion piętro ciepła</option>
+           <option value="21">Pion pięo zimna</option>
+           <option value="22">Pion parter ciepła</option>
+           <option value="23">Pion parter zimna</option>
+           <option value="24">Zaw. trójdrożny WE</option>
+           <option value="25">Zaw. trójdrożny WY</option>
+           <option value="26">Zaw. trójdrożny Powrót</option>
+           <option value="27">Zaw. ciśnieniowy</option>
+           <option value="28">Podłogó ciepła</option>
+           <option value="29">Podłogówka ziman</option>
+           <option value="30">Pompa cyrkulacja</option>
+           <option value="31">wolne</option>
         </select>
 
         Data od: <input type="date" name="datepicker" id="datepicker1">
