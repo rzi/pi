@@ -116,12 +116,16 @@ $(document).ready(function () {
 // funkcje
 
   function getTime() {
-    var wynik = teraz.getHours() + ":" + teraz.getMinutes()+":00";
-    // dodawanie 0 przed min jeśli <10
-      if (teraz.getMinutes() < 10) {
-        var wynik = teraz.getHours() + ":" + "0" + teraz.getMinutes();
-      }
-    //alert("minuta: " + wynik);
+    var godz=teraz.getHours();
+		if (godz<10){
+			godz="0"+godz;
+		}
+	var min=teraz.getMinutes();
+		if (min<10){
+			min="0"+min;
+		}
+	var wynik=godz+":"+min+":00";
+
     return (wynik);
   }
 
