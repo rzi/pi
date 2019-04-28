@@ -23,7 +23,7 @@
   ?>
 </head>
 <body>
-    <h1>Pomiary temperatur - wykresy </h1>
+    <h2>Pomiary temperatur - wykresy </h2><br/>
     <div class="dane">
         Obiekt Pomiarowy:
         <select name="objektPomiarowy" id="objektPomiarowy">

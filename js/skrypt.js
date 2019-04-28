@@ -51,7 +51,6 @@ $(document).ready(function () {
     obiekt=y[x].index
   });
 
-
   $('#timepicker1').change (function(){
     godzina=document.getElementById("timepicker1").value;
   });
@@ -114,7 +113,6 @@ $(document).ready(function () {
   }); //koniec  przycisk 1
 
 // funkcje
-
   function getTime() {
     var wynik = teraz.getHours() + ":" + teraz.getMinutes()+":00";
     // dodawanie 0 przed min jeśli <10
