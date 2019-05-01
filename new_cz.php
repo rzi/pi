@@ -13,6 +13,7 @@
 <div class="container-fluid">
 <a href="index.php">Powrót</a>
  <br/>
+<div class="table-responsive">
 <?php
     // Łączymy się z bazą danych
 	require "connection_pi_base.php";
@@ -64,6 +65,7 @@
 	}
 mysqli_close($link);
 ?>
+</div>
 </div>
 </body>
 </html>
