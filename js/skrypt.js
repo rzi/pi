@@ -24,18 +24,18 @@ $(document).ready(function () {
   var godzina2;
   obiekt=2;
   var teraz = new Date;
-  var godzina = getTime();
+  var godzina = getTime2();
   var godzina2 = getTime();
 
   var timeControl = document.querySelector('input[type="time"]');
-  timeControl.value = godzina;
+  timeControl.value = godzina ;
 
   var timeControl2 = document.querySelector('input[type="time"].timepicker2');
   timeControl2.value = godzina2;
 
   var dzien = teraz.getFullYear() + '-' + ((teraz.getMonth() < 9 ? '0' : '') + (teraz.getMonth() + 1)) + '-' + ((teraz.getDate() < 9 ? '0' : '') + teraz.getDate());
 
-  var wczoraj = teraz.getFullYear() + '-' + ((teraz.getMonth() < 9 ? '0' : '') + (teraz.getMonth() + 1)) + '-' + ((teraz.getDate() < 9 ? '0' : '') + teraz.getDate()-1);
+  var wczoraj = teraz.getFullYear() + '-' + ((teraz.getMonth() < 9 ? '0' : '') + (teraz.getMonth() + 1)) + '-' + ((teraz.getDate() < 9 ? '0' : '') + teraz.getDate());
 
   var dateControl = document.querySelector('input[type="date"]');
   dateControl.value = wczoraj;
@@ -123,6 +123,20 @@ $(document).ready(function () {
 			min="0"+min;
 		}
 	var wynik=godz+":"+min+":00";
+
+    return (wynik);
+  }
+  function getTime2() {
+    var godz=teraz.getHours();
+    godz=godz-1;
+    if (godz<10){
+      godz="0"+godz;
+    }
+    var min=teraz.getMinutes();
+    if (min<10){
+      min="0"+min;
+    }
+    var wynik=godz+":"+min+":00";
 
     return (wynik);
   }
