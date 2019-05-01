@@ -1,19 +1,23 @@
 ﻿<!doctype html>
 <html lang="pl-PL">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-    <title>Formularz dane</title>
-  <link rel="stylesheet" href="/css/normalize.css" type="text/css" />
-    <link rel="stylesheet" href="/css/style.css" type="text/css" />
-    <!--//jquery   -->
-    <script
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/normalize.css" type="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+<title>Formularz dane</title>
+<link rel="stylesheet" href="/css/normalize.css" type="text/css" />
+<link rel="stylesheet" href="/css/style.css" type="text/css" />
+<!--//jquery   -->
+<script
             src="https://code.jquery.com/jquery-3.3.1.js"
             integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
             crossorigin="anonymous"></script>
 
-    <script src="/js/skrypt.js"></script>
+<script src="/js/skrypt.js"></script>
 
   <?php
   header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
@@ -24,6 +28,7 @@
   ?>
 </head>
 <body>
+<div class="container-fluid">
     <div class="dane">
     <h2>Pomiary temperatur - wykresy </h2><br/>
 
@@ -82,5 +87,6 @@
         <a href="index.php">Powrót</a>
         <canvas id="myChart"></canvas>
     </div>
+  </div>
 </body>
 </html>
