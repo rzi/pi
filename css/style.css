@@ -55,13 +55,4 @@ p{
 body{
   margin: 10px;
 }
-.imgclass{
-  width: 45%;
-  margin: 0 2.5%;
-}
 
-.imgclass > img {
-  width: 100%;
-  padding-top: 56.25%;
-  display: block;
-}
