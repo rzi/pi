@@ -10,7 +10,7 @@
 <title>Odczyt czujników</title>
 </head>
 <body>
-<div class="contener-fluid">
+<div class="conteiner-fluid">
 <a href="index.php">Powrót</a>
  <br/>
 <?php
