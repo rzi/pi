@@ -68,3 +68,7 @@ p {
 body {
   margin: 10px;
 }
+caption {
+  text-align: center;
+  caption-side: top;
+}
