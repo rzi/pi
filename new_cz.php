@@ -26,7 +26,7 @@
 			echo '<caption> Tabela zainstalowanych czujników</caption>';
 			echo '<tr>';
 //			echo '<td> Nr. zapisu </td>';
-			echo '<td> Temperatura</td>';
+			echo '<td> Temp.</td>';
 			echo '<td> Nr. Dec czujnika</td>';
 			echo '<td> Nr. Hex czujnika</td>';
 //			echo '<td> EPOCH</td>';
