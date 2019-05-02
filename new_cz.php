@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <div class="container-fluid">
+  <div class="container-fluid text-center ">
     <a href="index.php">Powrót</a>
     <br />
     <div class="table-responsive">
