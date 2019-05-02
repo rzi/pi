@@ -10,7 +10,7 @@ $(document).ready(function () {
         borderColor: 'rgb(55, 39, 250)',
         data: [0, 10, 5, 2, 20, 30, 45],
         fill: false,
-        A:[1]
+        A: [1]
       }]
     },
 
