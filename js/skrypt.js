@@ -139,7 +139,6 @@ $(document).ready(function () {
 
     return (wynik);
   }
-
   function fnTimeConv (label2){
     // Convert timestamp to milliseconds label2 = timestamp
     var date = new Date(label2*1000);
