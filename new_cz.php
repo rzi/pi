@@ -12,10 +12,10 @@
 </head>
 
 <body>
-  <div class="container-fluid text-center ">
+  <div class="container-fluid ">
     <a href="index.php">Powrót</a>
     <br />
-    <div class="table-responsive">
+    <div class="table-responsive" >
       <?php
     // Łączymy się z bazą danych
 	require "connection_pi_base.php";
