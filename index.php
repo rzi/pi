@@ -10,7 +10,7 @@
 <title>Pomiar temperatury Raspberry PI</title>
 </head>
 <body>
-<div class="container-fluid">
+<div class="container">
 
   <h3 >Pomiar temperatury i zapis w bazie danych</h3>
   <div class="contener1">
