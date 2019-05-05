@@ -149,6 +149,9 @@ $(document).ready(function () {
         month="0"+month;
       }
     var day = date.getDate();
+      if (day<10){
+          day="0"+day;
+      }
     var hours = date.getHours();
     var minutes = "0" + date.getMinutes();
     var convdataTime = year+'-'+month+'-'+day+' '+hours + ':' + minutes.substr(-2);
