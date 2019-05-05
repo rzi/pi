@@ -14,15 +14,14 @@
 <body>
   <div class="container">
     <a href="index.php">Powrót</a>
-    <br />
     <div class="table-responsive" >
-      <?php
+    <?php
     // Łączymy się z bazą danych
 	require "connection_pi_base.php";
 	connection_pi_base();
 	//SELECT `my_epoch`,`nr_hex` ,`temp`,`my_pomieszczenie` FROM pomiary2 JOIN pomieszczenie ON pomiary2.id=pomieszczenie.id ORDER BY pomiary2.id DESC LIMIT 29
    	//$wynik1 = mysql_query("select *cz.nr_hex, cz.numer,cz.nr_odczyt, n.nazwa, cz.data, cz.czas
-	if ($wynik1 = mysqli_query($link,"SELECT * FROM pomiary2 LEFT OUTER JOIN pomieszczenie  ON pomiary2.nr_czujnika=pomieszczenie.my_nr_dec ORDER BY pomiary2.id DESC LIMIT 29")){
+	if ($wynik1 = mysqli_query($link,"SELECT * FROM pomiary2 LEFT OUTER JOIN pomieszczenie  ON pomiary2.nr_czujnika=pomieszczenie.my_nr_dec ORDER BY pomiary2.id DESC LIMIT 25")){
 		if(mysqli_num_rows($wynik1) > 0) {
 			echo '<table >';
 			echo '<caption> Tabela zainstalowanych czujników</caption>';
