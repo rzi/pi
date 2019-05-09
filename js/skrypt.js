@@ -46,7 +46,7 @@ $(document).ready(function () {
     var sel = document.getElementById('objektPomiarowy');
     var x = document.getElementById("objektPomiarowy").selectedIndex;
     var y = document.getElementById("objektPomiarowy").options;
-    //alert("Index: " + y[x].index );
+//    alert("Index: " + y[x].index );
     obiekt=y[x].index
   });
 
