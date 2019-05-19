@@ -27,6 +27,7 @@
     <h3>Pomiar temperatury- Monitor danych (archiwum)</h3>
     <a href="new_wyk5.php">Pomiar temperatury - wykresy >>></a><br/>
     <a href="new_cz.php">Pomiar temperatury - dane >>></a>
+    <br/>
   </div>
 </div>
 <!-- Optional JavaScript -->
