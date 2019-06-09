@@ -32,9 +32,9 @@ $(document).ready(function () {
   var timeControl2 = document.querySelector('input[type="time"].timepicker2');
   timeControl2.value = godzina2;
 
-  var dzien = teraz.getFullYear() + '-' + ((teraz.getMonth() < 9 ? '0' : '') + (teraz.getMonth() + 1)) + '-' + ((teraz.getDate() < 9 ? '0' : '') + teraz.getDate());
+  var dzien = teraz.getFullYear() + '-' + ((teraz.getMonth() < 9 ? '0' : '') + (teraz.getMonth() + 1)) + '-' + ((teraz.getDate() < 10 ? '0' : '') + teraz.getDate());
 
-  var wczoraj = teraz.getFullYear() + '-' + ((teraz.getMonth() < 9 ? '0' : '') + (teraz.getMonth() + 1)) + '-' + ((teraz.getDate() < 9 ? '0' : '') + teraz.getDate());
+  var wczoraj = teraz.getFullYear() + '-' + ((teraz.getMonth() < 9 ? '0' : '') + (teraz.getMonth() + 1)) + '-' + ((teraz.getDate() < 10 ? '0' : '') + teraz.getDate());
 
   var dateControl = document.querySelector('input[type="date"]');
   dateControl.value = wczoraj;
