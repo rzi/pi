@@ -13,52 +13,54 @@
 </head>
 
 <body>
-    <div class="container">
-        <h3>Pomiar temperatury i zapis w bazie danych</h3>
-        <div class="contener1">
-            <p>Celem projektu są pomiary temperatur, ich
-                zapis do zewnętrznej bazy danych oraz sterowanie zaworami ogrzewania podłogowego</p>
-            <img alt="Pi" src="/img/schemat_rpi2.png" class="img-fluid"> <br>
-            <h4>1.Hardware:</h4>
-            <ul>
-                <li>
-                    Czujnik temperatury DS18B20
-                </li>
-                <Li>
-                    Moduł interfejsu One wire na USB firmy Meraprojekt (FT232RL + DS2480)
-                </Li>
-                <li>
-                    Raspberry Pi jako serwer
-                </li>
-                <li>
-                    Moduł 8 przekaźników
-                </li>
-            </ul>
+    <main class="main">
+        <div class="container">
+            <h3>Pomiar temperatury i zapis w bazie danych</h3>
+            <div class="contener1">
+                <p>Celem projektu są pomiary temperatur, ich
+                    zapis do zewnętrznej bazy danych oraz sterowanie zaworami ogrzewania podłogowego</p>
+                <img alt="Pi" src="/img/schemat_rpi2.png" class="img-fluid"> <br>
+                <h4>1.Hardware:</h4>
+                <ul>
+                    <li>
+                        Czujnik temperatury DS18B20
+                    </li>
+                    <Li>
+                        Moduł interfejsu One wire na USB firmy Meraprojekt (FT232RL + DS2480)
+                    </Li>
+                    <li>
+                        Raspberry Pi jako serwer
+                    </li>
+                    <li>
+                        Moduł 8 przekaźników
+                    </li>
+                </ul>
 
-            <h4>2.Software:</h4>
-            <ul>
-                <li>
-                    Serwer HTTP (Apache, PHP, MySQL)
-                </li>
-                <li>
-                    Python - oprogramowanie modułu pomiarowego
-                </li>
-            </UL>
+                <h4>2.Software:</h4>
+                <ul>
+                    <li>
+                        Serwer HTTP (Apache, PHP, MySQL)
+                    </li>
+                    <li>
+                        Python - oprogramowanie modułu pomiarowego
+                    </li>
+                </UL>
 
-            <h3>Pomiar temperatury- Monitor danych (archiwum)</h3>
-            <ul>
+                <h3>Pomiar temperatury- Monitor danych (archiwum)</h3>
+                <ul>
 
-                <li>
-                    <a href="new_wyk5.php">Pomiar temperatury - wykresy >>></a>
-                </li>
+                    <li>
+                        <a href="new_wyk5.php">Pomiar temperatury - wykresy >>></a>
+                    </li>
 
-                <li>
-                    <a href="new_cz.php">Pomiar temperatury - dane >>></a>
-                </li>
-            </ul>
+                    <li>
+                        <a href="new_cz.php">Pomiar temperatury - dane >>></a>
+                    </li>
+                </ul>
 
+            </div>
         </div>
-    </div>
+    </main>    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
